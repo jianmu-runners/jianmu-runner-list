@@ -26,3 +26,15 @@
 
 <img src="https://img.jianmu.run/node-definition/icon/FjIcOhP7DXyU8LfuoqkQ96hK7itw?imageView2/2/w/94/h/94/interlace/1/q/100" alt="img" style="zoom: 25%;" /> [maven构建](https://hub.jianmu.run/_/maven_build)
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>建木 Hub</title>
+  </head>
+  <body>
+    <img src="https://img.jianmu.run/node-definition/icon/FjIcOhP7DXyU8LfuoqkQ96hK7itw?imageView2/2/w/94/h/94/interlace/1/q/100" alt="img" style="zoom: 25%;" />
+      </body>
+</html>
