@@ -21,4 +21,5 @@
 | ![img](https://img.jianmu.run/node-definition/icon/FhJotcreNFwAAio6zF-d75-zuCCf?imageView2/2/w/30/h/30/interlace/1/q/100%7CroundPic/radius/!25.5p) | [acme构建ssl证书-阿里云](https://hub.jianmu.run/_/acme_ssl_aliyun) | [jianmu-runner-acme-ssl](https://gitee.com/jianmu-runners/jianmu-runner-acme-ssl.git) |
 | ![img](https://img.jianmu.run/node-definition/icon/FjG9eU2DVdG-5eC9DUQ_juPkyie2?imageView2/2/w/30/h/30/interlace/1/q/100) |  [seafile文件上传](https://hub.jianmu.run/_/seafile_upload)  | [jianmu-runner-seafile](https://gitee.com/jianmu-runners/jianmu-runner-seafile.git) |
 | ![img](https://img.jianmu.run/node-definition/icon/Fk5hx9DxszYY8DFuHeRW8TaJxPlu?imageView2/2/w/30/h/30/interlace/1/q/100%7CroundPic/radius/!25.5p) | [tar压缩/解压文件](https://hub.jianmu.run/_/pack_tar) | [jianmu-runner-tar](https://gitee.com/jianmu-runners/jianmu-runner-tar.git) |
+| ![img](https://img.jianmu.run/node-definition/icon/FjyC_qHh_xVe2B3Ey4Iaw-Arfebv?imageView2/2/w/30/h/30/interlace/1/q/100%7CroundPic/radius/!25.5p) | [zip压缩/解压文件](https://hub.jianmu.run/_/pack_zip) | [jianmu-runner-zip](https://gitee.com/jianmu-runners/jianmu-runner-zip.git) |
 
