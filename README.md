@@ -1,8 +1,11 @@
 # jianmu-runner-list
 
-本项目列出 Jianmu 官方节点与官方认证节点
+本项目列出建木官方节点与官方认证节点
 
 如有节点需求，也可以在本项目的 issue 中提出
+
+若要创建自定义节点可参考[示例](https://gitee.com/jianmu-runners/jianmu-runner-example)
+& [官方文档](https://docs.jianmu.dev/guide/custom-node.html)
 
 官方节点:
 
