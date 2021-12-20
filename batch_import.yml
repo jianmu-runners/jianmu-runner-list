@@ -14,7 +14,7 @@ trigger:
       exp: $.body.json.ref
   auth:
     token: ${trigger.gitee_token}
-    value: ((gitee.webhook_token))
+    value: ((gitee.webhook_runner_token))
   only: (${trigger.gitee_event} == "Push Hook" && ${trigger.git_ref} == "refs/heads/master")
 
 pipeline:
