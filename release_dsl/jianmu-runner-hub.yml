@@ -21,7 +21,7 @@ trigger:
       exp: $.body.json.ref
   auth:
     token: ${trigger.gitee_token}
-    value: ((gitee.jianmu-runner-hub))
+    value: ((gitee.webhook_runner_token))
   only: (${trigger.gitee_event} === "Tag Push Hook" && ${trigger.gitee_tag_created})
 
 pipeline:
