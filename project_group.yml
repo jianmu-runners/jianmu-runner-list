@@ -1,0 +1,8 @@
+groups:
+  - name: 建木示例节点
+    projects:
+      - /release_dsl/jianmu-runner-example.yml
+  - name: 建木官方节点
+    projects:
+      # 建木Hub节点定义版本发布
+      - /release_dsl/jianmu-runner-hub.yml
