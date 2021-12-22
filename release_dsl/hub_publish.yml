@@ -2,7 +2,8 @@ name: 发布"建木Hub节点定义版本发布"节点
 
 global:
   param:
-    image_name: jianmudev/jianmu-runner-hub
+    # 格式：jianmurunner/${节点定义唯一标识}
+    image_name: jianmurunner/hub_publish
 
 trigger:
   type: webhook
@@ -34,8 +35,8 @@ pipeline:
     type: docker_image_build:1.0.1
     param:
       workspace: ${git_clone.git_path}
-      docker_username: ((dockerhub.username))
-      docker_password: ((dockerhub.password))
+      docker_username: ((dockerhub.runner_user))
+      docker_password: ((dockerhub.runner_pass))
       docker_file: dockerfile/Dockerfile
       image_name: ${global.image_name}
       image_tag: ${git_clone.git_tag}
@@ -48,7 +49,7 @@ pipeline:
       hub_api_ak: ((jianmuhub.ak))
       hub_api_sk: ((jianmuhub.sk))
       version: ${git_clone.git_tag}
-      image: ${global.image_name}/${git_clone.git_tag}
+      image: ${global.image_name}:${git_clone.git_tag}
   send_message:
     type: qywx_notice:1.2.1
     param:
