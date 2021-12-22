@@ -2,7 +2,8 @@ name: 发布自定义示例节点
 
 global:
   param:
-    image_name: jianmudev/jianmu-runner-example
+    # 格式：jianmurunner/${节点定义唯一标识}
+    image_name: jianmurunner/custom_node_example
 
 trigger:
   type: webhook
@@ -34,8 +35,8 @@ pipeline:
     type: docker_image_build:1.0.1
     param:
       workspace: ${git_clone.git_path}
-      docker_username: ((dockerhub.username))
-      docker_password: ((dockerhub.password))
+      docker_username: ((dockerhub.runner_user))
+      docker_password: ((dockerhub.runner_pass))
       docker_file: dockerfile/Dockerfile
       image_name: ${global.image_name}
       image_tag: ${git_clone.git_tag}
