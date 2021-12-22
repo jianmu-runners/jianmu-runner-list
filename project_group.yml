@@ -1,4 +1,8 @@
 groups:
+  - name: 默认分组
+    projects:
+      # 批量导入
+      - /batch_import.yml
   - name: 建木示例节点
     projects:
       - /release_dsl/custom_node_example.yml
