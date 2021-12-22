@@ -5,4 +5,4 @@ groups:
   - name: 建木官方节点
     projects:
       # 建木Hub节点定义版本发布
-      - /release_dsl/jianmu-runner-hub.yml
+      - /release_dsl/hub_publish.yml
