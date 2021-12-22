@@ -12,10 +12,16 @@ trigger:
     - name: git_ref
       type: STRING
       exp: $.body.json.ref
+    - name: pr_state
+      type: STRING
+      exp: $.body.json.pull_request.state
+    - name: pr_target_branch
+      type: STRING
+      exp: $.body.json.target_branch
   auth:
     token: ${trigger.gitee_token}
     value: ((gitee.webhook_runner_token))
-  only: (${trigger.gitee_event} == "Push Hook" && ${trigger.git_ref} == "refs/heads/master")
+  only: (${trigger.gitee_event} == "Push Hook" && ${trigger.git_ref} == "refs/heads/master" || ${trigger.pr_target_branch} == "master" && ${trigger.pr_state} == "merged")
 
 pipeline:
   git_clone:
