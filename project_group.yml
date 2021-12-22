@@ -6,3 +6,5 @@ groups:
     projects:
       # 建木Hub节点定义版本发布
       - /release_dsl/hub_publish.yml
+      # 同步项目组
+      - /release_dsl/sync_project_group.yml
