@@ -12,3 +12,37 @@ groups:
       - /release_dsl/hub_publish.yml
       # 同步项目组
       - /release_dsl/sync_project_group.yml
+      # 飞书通知-文本
+      - /release_dsl/feishu_notice_text.yml
+      # 飞书通知-富文本
+      - /release_dsl/feishu_notice_post.yml
+      # 飞书通知-图片
+      - /release_dsl/feishu_notice_image.yml
+      # 飞书通知-消息卡片
+      - /release_dsl/feishu_notice_interactive.yml
+      # tar压缩/解压文件
+      - /release_dsl/pack_tar.yml
+      # zip压缩/解压文件
+      - /release_dsl/pack_zip.yml
+      # allure报表生成
+      - /release_dsl/allure_report.yml
+      # 钉钉通知-文本
+      - /release_dsl/dingtalk_notice_text.yml
+      # 钉钉通知-链接
+      - /release_dsl/dingtalk_notice_link.yml
+      # 钉钉通知-markdown
+      - /release_dsl/dingtalk_notice_markdown.yml
+      # 钉钉通知-Action Card
+      - /release_dsl/dingtalk_notice_action_card.yml
+      # 钉钉通知-Feed Card
+      - /release_dsl/dingtalk_notice_feed_card.yml
+      # mysql数据导入
+      - /release_dsl/mysql_import.yml
+      # mysql数据导出
+      - /release_dsl/mysql_export.yml
+      # redis数据导入
+      - /release_dsl/redis_import.yml
+      # redis数据导出
+      - /release_dsl/redis_export.yml
+      # 字符串处理
+      - /release_dsl/string.yml
