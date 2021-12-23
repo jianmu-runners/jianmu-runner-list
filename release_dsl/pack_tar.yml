@@ -39,7 +39,6 @@ pipeline:
       hub_api_ak: ((jianmuhub.ak))
       hub_api_sk: ((jianmuhub.sk))
       version: ${git_clone.git_tag}
-      image: ${global.image_name}:${git_clone.git_tag}
   send_message:
     type: qywx_notice:1.2.1
     param:
