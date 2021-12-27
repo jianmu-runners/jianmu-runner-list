@@ -49,7 +49,7 @@ pipeline:
     type: hub_publish:1.1.0
     param:
       hub_url: https://hub.jianmu.dev
-      dsl_file_path: ${git_clone.git_path}/dsl/redis_export.yml
+      dsl_file_path: ${git_clone.git_path}/dsl/export.yml
       hub_api_ak: ((jianmuhub.ak))
       hub_api_sk: ((jianmuhub.sk))
       version: ${string.result}
@@ -59,6 +59,6 @@ pipeline:
     param:
       bot_webhook_url: ((charbot.webhook_url))
       mentioned_moblie_list: "[]"
-      text_content: "redis数据导出节点发布成功。\\n\\n版本：${git_clone.git_tag}"
+      text_content: "redis数据导出节点发布成功。\\n\\n版本：${string.result}"
       msgtype: "text"
       mentioned_list: "[]"
