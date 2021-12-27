@@ -34,7 +34,7 @@ pipeline:
   string:
     type: string:1.0.0-nodejs16.13.1
     param:
-      expression: '${git_clone.git_tag}.split(">")[1]'
+      expression: '"${git_clone.git_tag}".split(">")[1]'
   image_build:
     type: docker_image_build:1.0.1
     param:
