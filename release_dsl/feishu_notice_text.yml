@@ -19,11 +19,11 @@ trigger:
       exp: $.body.json.created
     - name: gitee_ref
       type: STRING
-      exp: $.body.json.ref
+      exp: $.body.json.[?(@.ref=~/^refs\/tags\/feishu_notice_text>.*$/i)].ref
   auth:
     token: ${trigger.gitee_token}
     value: ((gitee.webhook_runner_token))
-  only: (${trigger.gitee_event} === "Tag Push Hook" && ${trigger.gitee_tag_created})
+  only: (${trigger.gitee_event} === "Tag Push Hook" && ${trigger.gitee_tag_created} && ${trigger.gitee_ref} != "")
 
 pipeline:
   git_clone:
@@ -31,6 +31,10 @@ pipeline:
     param:
       remote_url: https://gitee.com/jianmu-runners/jianmu-runner-feishu.git
       ref: ${trigger.gitee_ref}
+  string:
+    type: string:1.0.0-nodejs16.13.1
+    param:
+      expression: '${git_clone.git_tag}.split(">")[1]'
   image_build:
     type: docker_image_build:1.0.1
     param:
@@ -39,7 +43,7 @@ pipeline:
       docker_password: ((dockerhub.runner_pass))
       docker_file: dockerfile/Dockerfile
       image_name: ${global.image_name}
-      image_tag: ${git_clone.git_tag}
+      image_tag: ${string.result}
       docker_build_path: .
   hub_publish:
     type: hub_publish:1.1.0
@@ -48,8 +52,8 @@ pipeline:
       dsl_file_path: ${git_clone.git_path}/dsl/text.yml
       hub_api_ak: ((jianmuhub.ak))
       hub_api_sk: ((jianmuhub.sk))
-      version: ${git_clone.git_tag}
-      image: ${global.image_name}:${git_clone.git_tag}
+      version: ${string.result}
+      image: ${global.image_name}:${string.result}
   send_message:
     type: qywx_notice:1.2.1
     param:
