@@ -49,7 +49,7 @@ pipeline:
     type: hub_publish:1.1.0
     param:
       hub_url: https://hub.jianmu.dev
-      dsl_file_path: ${git_clone.git_path}/dsl/mysql_import.yml
+      dsl_file_path: ${git_clone.git_path}/dsl/import.yml
       hub_api_ak: ((jianmuhub.ak))
       hub_api_sk: ((jianmuhub.sk))
       version: ${string.result}
