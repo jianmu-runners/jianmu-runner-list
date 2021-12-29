@@ -46,3 +46,5 @@ groups:
       - /release_dsl/redis_export.yml
       # 字符串处理
       - /release_dsl/string.yml
+      # gitee开放api
+      - /release_dsl/gitee.yml
