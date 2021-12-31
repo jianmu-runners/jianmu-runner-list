@@ -7,7 +7,7 @@
 若要创建自定义节点可参考[示例](https://gitee.com/jianmu-runners/jianmu-runner-example)
 & [官方文档](https://docs.jianmu.dev/guide/custom-node.html)
 
-### 如何贡献官方节点
+### 如何贡献官方节点:
 
 1. 在 [jianmu-runner-list](https://gitee.com/jianmu-runners/jianmu-runner-list/issues) 提Issue，请求贡献官方节点
 2. 等待[管理员](https://gitee.com/liamjung) 回复，接受官方的仓库邀请链接
