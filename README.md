@@ -7,12 +7,12 @@
 若要创建自定义节点可参考[示例](https://gitee.com/jianmu-runners/jianmu-runner-example)
 & [官方文档](https://docs.jianmu.dev/guide/custom-node.html)
 
-### 如何贡献官方节点
+### 如何贡献官方节点:
 
 1. 在 [jianmu-runner-list](https://gitee.com/jianmu-runners/jianmu-runner-list/issues) 提Issue，请求贡献官方节点
 2. 等待[管理员](https://gitee.com/liamjung) 回复，接受官方的仓库邀请链接
 3. 在仓库中开发节点，push代码。参考[示例](https://gitee.com/jianmu-runners/jianmu-runner-example)
-4. 向 [jianmu-runner-list](https://gitee.com/jianmu-runners/jianmu-runner-list) 提交pr：
+4. fork [jianmu-runner-list](https://gitee.com/jianmu-runners/jianmu-runner-list) 仓库， 提交pr：
     * 添加项目[release_dsl](https://gitee.com/jianmu-runners/jianmu-runner-list/tree/master/release_dsl) ，用于自动发版
     * 在[project_group.yml](https://gitee.com/jianmu-runners/jianmu-runner-list/blob/master/project_group.yml) 和 [README.md](https://gitee.com/jianmu-runners/jianmu-runner-list/blob/master/README.md) 中添加节点信息
 5. 在仓库里创建`tag`，该事件触发自动发版，若需要删除已创建的tag，请联系[管理员](https://gitee.com/liamjung)
