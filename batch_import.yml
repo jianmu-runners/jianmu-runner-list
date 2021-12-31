@@ -41,7 +41,7 @@ pipeline:
   sync_gitee_webhook:
     type: sync_gitee_webhook:1.0.0
     param:
-      access_token: ((gitee.webhook_token))
+      access_token: ((gitee.sync_webhook_token))
       ci_url: https://ci.jianmu.run
       password: ((gitee.webhook_runner_token))
       git_path: ${git_clone.git_path}
