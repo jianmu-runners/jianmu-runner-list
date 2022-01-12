@@ -48,6 +48,8 @@ groups:
       - /release_dsl/string.yml
       # gitee开放api
       - /release_dsl/gitee.yml
+      # 发送邮件
+      - /release_dsl/email.yml
   - name: 建木官方内源节点
     projects:
       # 批量同步giee webhook
