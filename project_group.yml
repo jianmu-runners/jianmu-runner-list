@@ -50,6 +50,18 @@ groups:
       - /release_dsl/gitee.yml
       # 发送邮件
       - /release_dsl/email.yml
+      # docker镜像构建
+      - /release_dsl/docker_image_build.yml
+      # maven构建
+      - /release_dsl/maven_build.yml
+      # nodejs构建
+      - /release_dsl/nodejs_build.yml
+      # 企业微信通知
+      - /release_dsl/qywx_notice.yml
+      # ssh执行命令
+      - /release_dsl/ssh_cmd.yml
+      # scp替换文件
+      - /release_dsl/scp_resouce.yml
   - name: 建木官方内源节点
     projects:
       # 批量同步giee webhook
