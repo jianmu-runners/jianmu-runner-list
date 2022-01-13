@@ -63,7 +63,7 @@ groups:
       # scp替换文件
       - /release_dsl/scp_resouce.yml
       # acme.sh申请证书
-      - /release_dsl/acme.sh.yml
+      - /release_dsl/acme_sh.yml
   - name: 建木官方内源节点
     projects:
       # 批量同步giee webhook
