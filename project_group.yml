@@ -64,6 +64,16 @@ groups:
       - /release_dsl/scp_resouce.yml
       # acme.sh申请证书
       - /release_dsl/acme_ssl_aliyun.yml
+      # git-clone
+      - /release_dsl/git_clone.yml
+      # git-push
+      - /release_dsl/git_push.yml
+      # seafile-download
+      - /release_dsl/seafile_download.yml
+      # seafile-upload
+      - /release_dsl/seafile_upload.yml
+      # kubectl-deploy
+      - /release_dsl/kubectl_deploy.yml
   - name: 建木官方内源节点
     projects:
       # 批量同步giee webhook
