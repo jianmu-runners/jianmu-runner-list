@@ -74,6 +74,10 @@ groups:
       - /release_dsl/seafile_upload.yml
       # kubectl-deploy
       - /release_dsl/kubectl_deploy.yml
+      # svn-checkout
+      - /release_dsl/svn_checkout.yml
+      # smbclient
+      - /release_dsl/smbclient.yml
       # file-md5
       - /release_dsl/file_md5.yml
   - name: 建木官方内源节点
