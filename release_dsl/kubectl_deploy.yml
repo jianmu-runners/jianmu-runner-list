@@ -41,7 +41,7 @@ pipeline:
       workspace: ${git_clone.git_path}
       docker_username: ((dockerhub.runner_user))
       docker_password: ((dockerhub.runner_pass))
-      docker_file: dockerfile/Dockerfile
+      docker_file: dockerfile/Dockerfile_kubectl_deploy
       image_name: ${global.image_name}
       image_tag: ${string.result}
       docker_build_path: .
