@@ -78,6 +78,8 @@ groups:
       - /release_dsl/svn_checkout.yml
       # smbclient
       - /release_dsl/smbclient.yml
+      # file-md5
+      - /release_dsl/file_md5.yml
   - name: 建木官方内源节点
     projects:
       # 批量同步giee webhook
