@@ -37,7 +37,7 @@ pipeline:
       workspace: ${git_clone.git_path}
       docker_username: ((dockerhub.runner_user))
       docker_password: ((dockerhub.runner_pass))
-      docker_file: dockerfile/Dockerfile_aliyun
+      docker_file: dockerfile/Dockerfile-online
       image_name: ${global.image_name}
       image_tag: ${git_clone.git_tag}
       docker_build_path: .
