@@ -80,6 +80,10 @@ groups:
       - /release_dsl/smbclient.yml
       # file-md5
       - /release_dsl/file_md5.yml
+      # contributors-build
+      - /release_dsl/contributors-build.yml
+      # teams-build
+      - /release_dsl/teams-build.yml
   - name: 建木官方内源节点
     projects:
       # 批量同步giee webhook
