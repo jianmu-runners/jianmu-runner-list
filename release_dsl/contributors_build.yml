@@ -55,7 +55,6 @@ pipeline:
     type: qywx_notice:1.2.1
     param:
       bot_webhook_url: ((charbot.webhook_url))
-      mentioned_moblie_list: "[]"
       text_content: "构建contributors_build数据节点发布成功。\\n\\n版本：${string.result}"
       msgtype: "text"
       mentioned_list: "[]"
