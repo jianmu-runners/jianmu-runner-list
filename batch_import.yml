@@ -32,7 +32,7 @@ pipeline:
   sync_project_group:
     type: sync_project_group:2.0.0
     param:
-      ci_url: https://ci.jianmu.run
+      ci_url: https://ci.jianmu.dev
       ci_username: ((jianmu_ci.username))
       ci_password: ((jianmu_ci.password))
       git_path: ${git_clone.git_path}
@@ -42,7 +42,7 @@ pipeline:
     type: sync_gitee_webhook:1.0.1
     param:
       access_token: ((gitee.sync_webhook_token))
-      ci_url: https://ci.jianmu.run
+      ci_url: https://ci.jianmu.dev
       password: ((gitee.webhook_runner_token))
       git_path: ${git_clone.git_path}
       group_file_path: /project_group.yml
