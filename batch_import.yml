@@ -38,11 +38,13 @@ pipeline:
       git_path: ${git_clone.git_path}
       group_file_path: /project_group.yml
       deletable: false
-  sync_gitee_webhook:
-    type: sync_gitee_webhook:1.0.1
+  sync_node_settings:
+    type: sync_node_settings:1.0.0
     param:
       access_token: ((gitee.sync_webhook_token))
       ci_url: https://ci.jianmu.dev
       password: ((gitee.webhook_runner_token))
       git_path: ${git_clone.git_path}
       group_file_path: /project_group.yml
+      issue_webhook_url: https://ci.jianmu.dev/webhook/issue%E9%80%9A%E7%9F%A5
+      license_path: ${git_clone.git_path}/LICENSE
