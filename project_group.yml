@@ -84,3 +84,5 @@ groups:
     projects:
       # 批量同步giee webhook
       - /release_dsl/sync_gitee_webhook.yml
+      # 批量同步节点设置
+      - /release_dsl/sync_node_settings.yml
