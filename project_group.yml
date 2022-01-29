@@ -84,6 +84,8 @@ groups:
       - /release_dsl/contributors_build.yml
       # teams-build
       - /release_dsl/teams_build.yml
+      # 文本文件工具
+      - /release_dsl/text_file.yml
   - name: 建木官方内源节点
     projects:
       # 批量同步giee webhook
