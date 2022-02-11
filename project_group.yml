@@ -88,6 +88,8 @@ groups:
       - /release_dsl/text_file.yml
       # 七牛云api
       - /release_dsl/qiniu.yml
+      # OpenCLA API
+      - /release_dsl/opencla.yml
   - name: 建木官方内源节点
     projects:
       # 批量同步giee webhook
