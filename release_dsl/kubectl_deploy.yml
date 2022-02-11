@@ -48,7 +48,7 @@ pipeline:
   hub_publish:
     type: hub_publish:1.1.0
     param:
-      hub_url: https://jianmuhub.com
+      hub_url: https://api.internal.jianmuhub.com
       dsl_file_path: ${git_clone.git_path}/dsl/kubectl_deploy.yml
       hub_api_ak: ((jianmuhub.ak))
       hub_api_sk: ((jianmuhub.sk))
