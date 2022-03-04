@@ -94,6 +94,8 @@ groups:
       - /release_dsl/jsonpath.yml
       # git-log
       - /release_dsl/git_log.yml
+      # prettier
+      - /release_dsl/prettier.yml
   - name: 建木官方内源节点
     projects:
       # 批量同步giee webhook
