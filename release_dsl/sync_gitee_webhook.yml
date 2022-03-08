@@ -55,9 +55,8 @@ pipeline:
       version: ${string.result}
       image: ${global.image_name}:${string.result}
   send_message:
-    type: qywx_notice:1.2.1
+    type: feishu_notice_post:1.0.2
     param:
-      bot_webhook_url: ((charbot.webhook_url))
-      text_content: "同步gitee webhook节点发布成功。\\n\\n版本：${string.result}"
-      msgtype: "text"
-      mentioned_list: "[]"
+      bot_webhook_url: ((feishu.webhook_url))
+      msg_title: 同步gitee webhook节点发布成功。
+      msg_text: ${string.result}
