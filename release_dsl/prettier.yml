@@ -31,6 +31,12 @@ pipeline:
     param:
       remote_url: https://gitee.com/jianmu-runners/jianmu-runner-prettier.git
       ref: ${trigger.gitee_ref}
+  nodejs_build:
+    type: "nodejs_build:1.2.1-16.13.0"
+    param:
+      workspace: ${git_clone.git_path}
+      registry_url: https://registry.npm.taobao.org
+      build_arg: --mode cdn
   image_build:
     type: docker_image_build:1.0.1
     param:
