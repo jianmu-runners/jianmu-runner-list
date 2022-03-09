@@ -61,7 +61,7 @@ pipeline:
       msg_title: 飞书通知-消息卡片节点发布成功。
       msg_text: ${string.result}
   send_email:
-    type: email
+    type: email:1.0.0
     param:
       host: smtp.ym.163.com
       sender: notice@jianmu.dev
