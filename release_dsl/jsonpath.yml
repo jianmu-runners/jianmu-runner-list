@@ -57,7 +57,7 @@ pipeline:
       msg_title: JSONPath数据提取节点发布成功。
       msg_text: ${git_clone.git_tag}
   send_email:
-    type: email
+    type: email:1.0.0
     param:
       host: smtp.ym.163.com
       sender: notice@jianmu.dev
