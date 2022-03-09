@@ -46,4 +46,14 @@ pipeline:
       bot_webhook_url: ((feishu.webhook_url))
       msg_title: docker镜像构建节点发布成功。
       msg_text: ${git_clone.git_tag}
+  send_email:
+    type: email
+    param:
+      host: smtp.ym.163.com
+      sender: notice@jianmu.dev
+      auth_code: ((email.notice_auth_code))
+      receivers: '["dev@jianmu.dev"]'
+      type: html
+      subject: 节点发布通知-docker_image_build:${git_clone.git_tag}
+      text: docker镜像构建节点发布成功。<br/>${git_clone.git_tag}
 
