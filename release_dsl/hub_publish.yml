@@ -54,5 +54,5 @@ pipeline:
     type: feishu_notice_post:1.0.2
     param:
       bot_webhook_url: ((feishu.webhook_url))
-      msg_title: [建木Hub节点定义版本发布节点]发布成功。
+      msg_title: '[建木Hub节点定义版本发布节点]发布成功。'
       msg_text: ${git_clone.git_tag}
