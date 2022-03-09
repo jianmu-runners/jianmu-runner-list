@@ -60,3 +60,13 @@ pipeline:
       bot_webhook_url: ((feishu.webhook_url))
       msg_title: seafile_upload节点发布成功。
       msg_text: ${string.result}
+  send_email:
+    type: email
+    param:
+      host: smtp.ym.163.com
+      sender: notice@jianmu.dev
+      auth_code: ((email.notice_auth_code))
+      receivers: '["dev@jianmu.dev"]'
+      type: html
+      subject: 节点发布通知-seafile_upload:${string.result}
+      text: seafile_upload节点发布成功。<br/>${string.result}
