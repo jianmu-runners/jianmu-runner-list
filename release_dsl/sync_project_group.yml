@@ -65,4 +65,4 @@ pipeline:
       receivers: '["dev@jianmu.dev"]'
       type: html
       subject: 节点发布通知-sync_project_group:${git_clone.git_tag}
-      text: 同步项目组节点发布成功。<br/>${git_clone.git_tag}
+      text: 同步项目组节点发布成功。<br/>版本：${git_clone.git_tag}

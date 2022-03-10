@@ -69,4 +69,4 @@ pipeline:
       receivers: '["dev@jianmu.dev"]'
       type: html
       subject: 节点发布通知-ssh_cmd:${string.result}
-      text: ssh执行命令节点发布成功。<br/>${string.result}
+      text: ssh执行命令节点发布成功。<br/>版本：${string.result}
