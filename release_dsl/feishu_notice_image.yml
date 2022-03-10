@@ -59,7 +59,7 @@ pipeline:
     param:
       bot_webhook_url: ((feishu.webhook_url))
       msg_title: 飞书通知-图片节点发布成功。
-      msg_text: ${string.result}
+      msg_text: 版本：${string.result}
   send_email:
     type: email:1.0.0
     param:
