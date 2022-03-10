@@ -55,5 +55,5 @@ pipeline:
       receivers: '["dev@jianmu.dev"]'
       type: html
       subject: 节点发布通知-docker_image_build:${git_clone.git_tag}
-      text: docker镜像构建节点发布成功。<br/>${git_clone.git_tag}
+      text: docker镜像构建节点发布成功。<br/>版本：${git_clone.git_tag}
 

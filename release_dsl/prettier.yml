@@ -71,4 +71,4 @@ pipeline:
       receivers: '["dev@jianmu.dev"]'
       type: html
       subject: 节点发布通知-prettier:${git_clone.git_tag}
-      text: 已发布prettier前端代码自动格式化节点。<br/>${git_clone.git_tag}
+      text: 已发布prettier前端代码自动格式化节点。<br/>版本：${git_clone.git_tag}

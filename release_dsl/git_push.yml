@@ -69,4 +69,4 @@ pipeline:
       receivers: '["dev@jianmu.dev"]'
       type: html
       subject: 节点发布通知-git_push:${string.result}
-      text: git_push节点发布成功。<br/>${string.result}
+      text: git_push节点发布成功。<br/>版本：${string.result}

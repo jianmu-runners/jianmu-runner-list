@@ -69,4 +69,4 @@ pipeline:
       receivers: '["dev@jianmu.dev"]'
       type: html
       subject: 节点发布通知-sync_node_settings:${string.result}
-      text: 批量同步节点设置节点发布成功。<br/>${string.result}
+      text: 批量同步节点设置节点发布成功。<br/>版本：${string.result}
