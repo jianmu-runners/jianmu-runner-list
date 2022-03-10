@@ -55,7 +55,7 @@ pipeline:
     param:
       bot_webhook_url: ((feishu.webhook_url))
       msg_title: 已发布svn源码检出节点。
-      msg_text: ${git_clone.git_tag}
+      msg_text: 版本：${git_clone.git_tag}
   send_email:
     type: email:1.0.0
     param:
