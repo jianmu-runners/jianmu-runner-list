@@ -96,6 +96,8 @@ groups:
       - /release_dsl/git_log.yml
       # prettier
       - /release_dsl/prettier.yml
+      # 数字处理节点
+      - /release_dsl/number.yml
   - name: 建木官方内源节点
     projects:
       # 批量同步giee webhook
