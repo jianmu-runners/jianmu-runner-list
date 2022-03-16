@@ -98,6 +98,8 @@ groups:
       - /release_dsl/prettier.yml
       # 数字处理节点
       - /release_dsl/number.yml
+      # 谷歌Java代码格式化
+      - /release_dsl/google_java_format.yml
   - name: 建木官方内源节点
     projects:
       # 批量同步giee webhook
